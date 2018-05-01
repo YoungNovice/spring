@@ -4,6 +4,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.stereotype.Component;
 
 /**
+ * 实现了DsiposableBean接口 针对IOC 容器
  *
  * @author xuanyang
  */

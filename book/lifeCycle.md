@@ -1,0 +1,4 @@
+* BeanNameAware
+* BeanFactoryAware
+* ApplicationContextAware
+* InitializingBean

@@ -4,13 +4,15 @@ package com.ssm.chapter9.pojo;
  * 给source添加注释
  */
 public class Source {
-
-	// 类型
+	/** 类型*/
 	private String fruit;
-	// 糖分描述
+
+	/** 糖分描述*/
 	private String sugar;
-	// 大小杯
+
+	/** 大小杯*/
 	private String size;
+
 	public String getFruit() {
 		return fruit;
 	}

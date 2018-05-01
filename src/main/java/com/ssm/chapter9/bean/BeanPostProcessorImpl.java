@@ -2,10 +2,14 @@ package com.ssm.chapter9.bean;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
 
 /**
  * BeanPostProcessor 方法在每一个Bean的生命周期中都会执行
+ *
+ * @author xuanyang
  */
+@Component("beanPostProcessor")
 public class BeanPostProcessorImpl implements BeanPostProcessor {
 
 	@Override

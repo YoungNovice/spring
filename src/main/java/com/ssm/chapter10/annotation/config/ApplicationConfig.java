@@ -1,6 +1,5 @@
 package com.ssm.chapter10.annotation.config;
 
-import com.ssm.chapter10.annotation.pojo.Role;
 import org.apache.commons.dbcp.BasicDataSourceFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,9 +9,9 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-@ComponentScan(basePackageClasses = { Role.class})
-@ComponentScan(basePackages = {"com.ssm.chapter10.annotation.pojo",
-"com.ssm.chapter10.annotation.service"})
+//@ComponentScan(basePackageClasses = { Role.class})
+//@ComponentScan(basePackageClasses = {}, basePackages = {"com.ssm.chapter10.annotation.pojo",
+//"com.ssm.chapter10.annotation.service"})
 // @ComponentScan(basePackages = {"com.ssm.chapter10.annotation.pojo",
 // "com.ssm.chapter10.annotation.service"},
 // basePackageClasses = {Role.class, RoleServiceImpl.class})

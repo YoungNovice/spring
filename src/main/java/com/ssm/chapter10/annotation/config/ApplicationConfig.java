@@ -1,8 +1,6 @@
 package com.ssm.chapter10.annotation.config;
 
 import com.ssm.chapter10.annotation.pojo.Role;
-import com.ssm.chapter9.pojo.JuiceMaker2;
-import com.ssm.chapter9.pojo.Source;
 import org.apache.commons.dbcp.BasicDataSourceFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -70,15 +68,4 @@ public class ApplicationConfig {
 //		return dataSource;
 //	}
 	
-	@Bean(name="juiceMaker2", initMethod="init", destroyMethod="destroy")
-	public JuiceMaker2 initJuiceMaker2() {
-		JuiceMaker2 juiceMaker2 = new JuiceMaker2();
-		juiceMaker2.setBeverageShop("贡茶");
-		Source source = new Source();
-		source.setFruit("橙子");
-		source.setSize("大杯");
-		source.setSugar("少糖");
-	     juiceMaker2.setSource(source);
-		return juiceMaker2;
-	}
 }
